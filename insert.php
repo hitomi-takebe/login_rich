@@ -1,8 +1,8 @@
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
-$content = $_POST['password'];
-echo $content;
+$password = $_POST['password'];
+echo $password;
 
 try {
   //ID:'root', Password: xamppは 空白 ''
@@ -13,12 +13,12 @@ try {
 $stmt = $pdo->prepare("INSERT
                             INTO
                         account(id, name, email,password, date)
-                        VALUES(NULL, :name, :email, :content, now())"
+                        VALUES(NULL, :name, :email, :password, now())"
                     );
 
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);//PARAM_STRは文字列を指定
 $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-$stmt->bindValue(':content', $content, PDO::PARAM_STR);
+$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 
 //  3. 実行
 $status = $stmt->execute();
