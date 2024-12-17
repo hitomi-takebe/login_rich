@@ -23,7 +23,7 @@
             <input type="password" class="password" name="password" placeholder="Your Password"><br>
             <input type="submit" class="submit" value="確認する">
             </form>
-        <p class="link"><a href="login.php">既に登録している方はこちら</a></p>
+        <p class="submit"><a href="login.php">既に登録している方はこちら</a></p>
         </div>
     </div>
 </body>

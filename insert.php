@@ -2,7 +2,6 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-echo $password;
 
 try {
   //ID:'root', Password: xamppは 空白 ''
@@ -30,6 +29,6 @@ if($status === false){
   exit('ErrorMessage:'.$error[2]);
 }else{
   // ５．index.phpへリダイレクト
-    header('Location: index.php');
+    header('Location: welcome.php');
 }
 ?>

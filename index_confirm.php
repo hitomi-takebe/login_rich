@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
 <body>
 <?php
 // 入力データの取得
@@ -21,7 +38,7 @@ $password = $_POST['password'];
                 <input type="hidden"  name="password" value="<?= $password ?>">
                 <input type="submit" value="送信">
             </form>
-        <p><a href="index.php">修正する</a></p>
+        <p class="submit"><a href="index.php">修正する</a></p>
     </div>
 
 </body>

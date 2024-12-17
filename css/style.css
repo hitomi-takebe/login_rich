@@ -82,10 +82,12 @@ body {
 }
 
 /* ボタンのスタイル */
-.submit {
+.submit{
     width: 100%;
     padding: 1.2rem;
     font-size: 1.6rem;
+    display: inline-block;
+    text-decoration: none;
     font-weight: bold;
     color: #fff;
     background-color: #74dce7;
@@ -97,11 +99,13 @@ body {
 }
 
 /* ボタンがホバーされたときのスタイル */
-.submit:hover {
+.submit:hover
+{
     background-color: #39cddc;
 }
 
 /* ボタンが押されたときのスタイル */
-.submit:active {
+.submit:active
+{
     background-color: #2b9aa5;
 }
