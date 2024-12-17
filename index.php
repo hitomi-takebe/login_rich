@@ -16,12 +16,12 @@
         <div class="card__form">
             <form action="index_confirm.php" method="post">
             <label for="name">ユーザー名:</label>
-            <input type="text" id="name" class="name" name="name" placeholder="Your Name"><br>
+            <input type="text"  class="name" name="name" placeholder="Your Name"><br>
             <label for="email">メールアドレス:</label>
-            <input type="email" id="email" class="email" name="email" placeholder="Your Email"><br>
+            <input type="email" class="email" name="email" placeholder="Your Email"><br>
             <label for="password">パスワード:</label>
-            <input type="password" id="password" class="password" name="password" placeholder="Your Password"><br>
-            <input type="submit" id="submit" class="submit" value="登録">
+            <input type="password" class="password" name="password" placeholder="Your Password"><br>
+            <input type="submit" class="submit" value="確認する">
             </form>
         <p class="link"><a href="login.php">既に登録している方はこちら</a></p>
         </div>
