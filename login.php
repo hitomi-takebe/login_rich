@@ -36,8 +36,6 @@ if (password_verify($_POST['password'], $member['password'])) {
 } else {
     $msg = 'メールアドレスもしくはパスワードが間違っています。';
     $link = '<a href="login_form.php">戻る</a>';
-    echo $_SESSION['id'];
-    echo $_member['id'];
 }
 ?>
 
