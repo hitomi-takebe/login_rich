@@ -14,6 +14,6 @@
 </head>
 <body>
     <p class="card__title">ログイン成功です！</p>
-    <p class="link"><a href="index.php">戻る</a></p>
+    <p class="link"><a href="../index.php">戻る</a></p>
 </body>
 </html>
