@@ -11,12 +11,11 @@ $db_id = 'yoin_account';
 $db_pw ='deploy_yoin';
 
 //1.  DB接続します
+//try catch構文でデータベースの情報取得を実施
 try {
-  //Password:MAMP='root',XAMPP=''
-    
-    $pdo = new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host,$db_id,$db_pw);
+  $pdo = new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host,$db_id,$db_pw);
 } catch (PDOException $e) {
-    $msg = $e->getMessage();
+  exit('DBConnectError:'.$e->getMessage());
 }
 
 
