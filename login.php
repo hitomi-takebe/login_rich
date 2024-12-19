@@ -27,6 +27,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':email', $email);
 $stmt->execute();
 $member = $stmt->fetch();
+echo("ここまで");
 // //指定したハッシュがパスワードにマッチしているかチェック
 // if (password_verify($_POST['password'], $member['password'])) {
 //     //DBのユーザー情報をセッションに保存
