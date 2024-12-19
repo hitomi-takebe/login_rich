@@ -20,7 +20,7 @@
         <span class="card__title">ログインページ</span>
         <p class="card__content">サービスを使うためにログインをお願いします。</p>
         <div class="card__form">
-            <form action="index_confirm.php" method="post">
+            <form action="insert.php" method="post">
             <label for="email">メールアドレス:</label>
             <input type="email" class="email" name="email" required>
             <label for="password">パスワード:</label>
