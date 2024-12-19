@@ -4,7 +4,6 @@ require_once('funcs.php');
 //。セッションを使う前にsession_start()を呼び出さないとセッション変数が使えない
 session_start();
 $email = $_POST['email'];
-echo($email);
 
 $db_name = 'yoin_account';
 $db_host = 'mysql3104.db.sakura.ne.jp';
@@ -40,9 +39,9 @@ if (password_verify($_POST['password'], $member['password'])) {
     echo $_SESSION['id'];
     echo $_member['id'];
 }
-// ?>
+?>
 
-// <p><?php echo h($_SESSION['name']); ?>さん、こんにちは。</p>
-// <h1><?php echo $msg; ?></h1>
-// <?php echo $link; ?>
+<p><?php echo h($_SESSION['name']); ?>さん、こんにちは。</p>
+<h1><?php echo $msg; ?></h1>
+<?php echo $link; ?>
 
