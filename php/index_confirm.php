@@ -36,7 +36,7 @@ $password = $_POST['password'];
                 <input type="hidden" name="name" value="<?= $name ?>">
                 <input type="hidden"  name="email" value="<?= $email ?>">
                 <input type="hidden"  name="password" value="<?= $password ?>">
-                <input type="submit" value="送信">
+                <input type="submit"  class="submit" value="送信">
             </form>
         <p class="submit"><a href="../index.php">修正する</a></p>
     </div>
