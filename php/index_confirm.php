@@ -25,7 +25,7 @@ $password = $_POST['password'];
 ?>
     <div class="card">
         <span class="card__title">ユーザー登録</span>
-        <p class="card__content">完了しました。</p>
+        <p class="card__content">こちらで登録いたします。</p>
         <div class="card__form">
             <p>ユーザー名:<?= $name ?></P>
             <p>メールアドレス:<?= $email ?></P>
