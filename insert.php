@@ -3,15 +3,17 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $password  = password_hash($_POST['password'], PASSWORD_DEFAULT);  //**password_hash()**を使ってハッシュ化したパスワードをデータベースに登録
 
-//ローカルのデータベースにアクセスするための必要な情報を変数に渡す
-// $db_name = 'gs_db';
-// $db_host = 'localhost';
-// $db_id = 'root';
+
+
+// $db_name = '';
+// $db_host = '';
+// $db_id = '';
 // $db_pw ='';
 
-$db_name = '';
-$db_host = '';
-$db_id = '';
+//ローカルのデータベースにアクセスするための必要な情報を変数に渡す
+$db_name = 'gs_db';
+$db_host = 'localhost';
+$db_id = 'root';
 $db_pw ='';
 
 //try catch構文でデータベースの情報取得を実施
