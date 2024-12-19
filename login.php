@@ -22,11 +22,11 @@ try {
 // 指定したハッシュがパスワードにマッチしているかチェック
 //$_SESSIONはログイン中のユーザー情報を一時的に保持するために使う変数
 //生のパスワードがハッシュ化されたパスワードと一致するかどうかをチェック
-// $sql = "SELECT * FROM account WHERE email = :email";
-// $stmt = $pdo->prepare($sql);
-// $stmt->bindValue(':email', $email);
-// $stmt->execute();
-// $member = $stmt->fetch();
+$sql = "SELECT * FROM account WHERE email = :email";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':email', $email);
+$stmt->execute();
+$member = $stmt->fetch();
 // //指定したハッシュがパスワードにマッチしているかチェック
 // if (password_verify($_POST['password'], $member['password'])) {
 //     //DBのユーザー情報をセッションに保存
