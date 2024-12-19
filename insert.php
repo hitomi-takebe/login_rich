@@ -3,9 +3,20 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $password  = password_hash($_POST['password'], PASSWORD_DEFAULT);  //**password_hash()**を使ってハッシュ化したパスワードをデータベースに登録
 
+//ローカルのデータベースにアクセスするための必要な情報を変数に渡す
+// $db_name = 'gs_db';
+// $db_host = 'localhost';
+// $db_id = 'root';
+// $db_pw ='';
+
+$db_name = 'yoin_account';
+$db_host = 'mysql3104.db.sakura.ne.jp';
+$db_id = 'yoin_account';
+$db_pw ='deploy_yoin';
+
+//try catch構文でデータベースの情報取得を実施
 try {
-  //ID:'root', Password: xamppは 空白 ''
-  $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
+  $pdo = new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host,$db_id,$db_pw);
 } catch (PDOException $e) {
   exit('DBConnectError:'.$e->getMessage());
 }

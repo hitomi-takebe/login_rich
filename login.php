@@ -5,11 +5,16 @@ require_once('funcs.php');
 session_start();
 $email = $_POST['email'];
 
+$db_name = 'yoin_account';
+$db_host = 'mysql3104.db.sakura.ne.jp';
+$db_id = 'yoin_account';
+$db_pw ='deploy_yoin';
 
 //1.  DB接続します
 try {
   //Password:MAMP='root',XAMPP=''
-    $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
+    
+    $pdo = new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host,$db_id,$db_pw);
 } catch (PDOException $e) {
     $msg = $e->getMessage();
 }
@@ -36,7 +41,7 @@ if (password_verify($_POST['password'], $member['password'])) {
 }
 ?>
 
-<p><?php echo $_SESSION['name']; ?>さん、こんにちは。</p>
+<p><?php echo h($_SESSION['name']); ?>さん、こんにちは。</p>
 <h1><?php echo $msg; ?></h1>
 <?php echo $link; ?>
 
