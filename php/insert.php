@@ -5,16 +5,11 @@ $password  = password_hash($_POST['password'], PASSWORD_DEFAULT);  //**password_
 
 
 
-$db_name = 'yoin_account';
-$db_host = 'mysql3104.db.sakura.ne.jp';
-$db_id = 'yoin_account';
-$db_pw ='deploy_yoin';
-
 //ローカルのデータベースにアクセスするための必要な情報を変数に渡す
-// $db_name = 'gs_db';
-// $db_host = 'localhost';
-// $db_id = 'root';
-// $db_pw ='';
+$db_name = 'gs_db';
+$db_host = 'localhost';
+$db_id = 'root';
+$db_pw ='';
 
 //try catch構文でデータベースの情報取得を実施
 try {
