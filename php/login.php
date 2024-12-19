@@ -5,16 +5,16 @@ require_once('funcs.php');
 session_start();
 $email = $_POST['email'];
 
-// $db_name = '';
-// $db_host = '';
-// $db_id = '';
-// $db_pw ='';
+$db_name = 'yoin_account';
+$db_host = 'mysql3104.db.sakura.ne.jp';
+$db_id = 'yoin_account';
+$db_pw ='deploy_yoin';
 
 //ローカルのデータベースにアクセスするための必要な情報を変数に渡す
-$db_name = 'gs_db';
-$db_host = 'localhost';
-$db_id = 'root';
-$db_pw ='';
+// $db_name = 'gs_db';
+// $db_host = 'localhost';
+// $db_id = 'root';
+// $db_pw ='';
 
 // 1.  DB接続します
 // try catch構文でデータベースの情報取得を実施
