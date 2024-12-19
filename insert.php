@@ -1,7 +1,7 @@
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password  = password_hash($_POST['password'], PASSWORD_DEFAULT);  //**password_hash()**を使ってハッシュ化したパスワードをデータベースに登録
 
 try {
   //ID:'root', Password: xamppは 空白 ''

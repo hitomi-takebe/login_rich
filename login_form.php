@@ -9,7 +9,7 @@
 <div>
     <label>
         パスワード：
-        <input type="password" name="pass" required>
+        <input type="password" name="password" required>
     </label>
 </div>
 <input type="submit" value="ログイン">
